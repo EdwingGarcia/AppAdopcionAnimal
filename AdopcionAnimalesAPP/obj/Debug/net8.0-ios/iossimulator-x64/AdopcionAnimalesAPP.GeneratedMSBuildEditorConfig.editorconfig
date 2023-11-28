@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AdopcionAnimalesAPP
+build_property.ProjectDir = C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/DetallesAnimalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.DetallesAnimalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DetallesAnimalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DetallesAnimalPage.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/PrincipalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.PrincipalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PrincipalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PrincipalPage.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/RegistroPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.RegistroPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegistroPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegistroPage.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

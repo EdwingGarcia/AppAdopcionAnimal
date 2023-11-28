@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdopcionAnimalesAPP.RegistroPage"
+             Title="RegistroPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Ingresa tu información:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="White"
+            BackgroundColor="Purple"
+            FontAttributes="Bold" 
+            FontSize="18" />
+       
+        <Entry Placeholder="Cedula" x:Name="Cedula" HorizontalOptions="FillAndExpand" Margin="10"/>
+        <Entry Placeholder="Nombre" x:Name="Nombre" HorizontalOptions="FillAndExpand" Margin="10"/>
+        <Entry Placeholder="Direccion" x:Name="Direccion" HorizontalOptions="FillAndExpand" Margin="10"/>
+        <Entry Placeholder="Contraseña" x:Name="Password"  HorizontalOptions="FillAndExpand" Margin="10"/>
+        <Entry Placeholder="Repita Contraseña" x:Name="PasswordConf"  HorizontalOptions="FillAndExpand" Margin="10"/>
+        
+
+        <Button Text="Crear Cuenta" Clicked="Button_Clicked" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Purple"/>
+    </VerticalStackLayout>
+</ContentPage>

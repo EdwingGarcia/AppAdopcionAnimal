@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdopcionAnimalesAPP.LoginPage"
+             Title="Adopta tu animalito"
+             BackgroundColor="MediumPurple">
+
+
+
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label 
+     Text="Bienvenido al inventario de Productos!"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center"
+     TextColor="White"
+     BackgroundColor="Purple"
+     FontAttributes="Bold" 
+     FontSize="18" />
+        <Image Source="Resources/Images/cuchau.jpg" Margin="20"  WidthRequest="200"  Aspect="Fill"></Image>
+        <Entry Placeholder="Usuario" x:Name="Cedula" HorizontalOptions="FillAndExpand" Margin="10"/>
+        <Entry Placeholder="Contraseña" x:Name="Password" IsPassword="True" HorizontalOptions="FillAndExpand" Margin="10"/>
+
+        <Button Text="Ingresar" Clicked="Boton_Ingresar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Purple"/>
+        <Button Text="Registrate!" Clicked="Boton_Registro" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Purple"/>
+    </VerticalStackLayout>
+</ContentPage>
