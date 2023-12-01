@@ -17,7 +17,7 @@ namespace AdopcionAnimalesAPP.Models
         public float Peso { get; set; }
         public int Status { get; set; } //  NoComprado=0 Comprado=1 Internado=2
         public string Enfermedad { get; set; }
-        public int? Propietario { get; set; }//Cedula Propietario
+        public string Propietario { get; set; }//Cedula Propietario
         public string Img {  get; set; }
 
 

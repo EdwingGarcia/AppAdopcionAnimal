@@ -8,6 +8,7 @@ namespace AdopcionAnimalesAPP;
 public partial class LoginPage : ContentPage
 {
 	private Cliente _cliente;
+    private string _cedula;
     private readonly ClienteService _ClienteService;
     public LoginPage(ClienteService clienteService)
 	{
@@ -37,8 +38,9 @@ public partial class LoginPage : ContentPage
             Cliente usuario = await _ClienteService.GetCliente(_cliente.Cedula);
             if (usuario != null && usuario.Password == _cliente.Password)
             {
-                AnimalService animalservice = new AnimalService();
-                await Navigation.PushAsync(new PrincipalPage(animalservice));
+                _cedula = _cliente.Cedula;
+                AnimalService animalservice= new AnimalService();
+                await Navigation.PushAsync(new PrincipalPage(animalservice,_cedula));
             }
         }
     }

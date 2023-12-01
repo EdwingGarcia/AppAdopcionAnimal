@@ -1,6 +1,6 @@
 using AdopcionAnimalesAPP.Models;
 using AdopcionAnimalesAPP.Service;
-using static Android.Util.EventLogTags;
+
 
 namespace AdopcionAnimalesAPP;
 

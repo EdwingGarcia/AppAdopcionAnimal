@@ -57,24 +57,35 @@ namespace AdopcionAnimalesAPP.Service
             response.EnsureSuccessStatusCode();
         }
 
-        public async Task<List<Animal>> BuscarPorPropietario(int Propietario)
+        public async Task<List<Animal>> BuscarPorPropietario(string Propietario)
         {
-            if (Propietario != 0)
+            if (Propietario != null && Propietario != "")
             {
-                var response = await _httpClient.GetFromJsonAsync<List<Animal>>($"api/Animal/GetAnimalesPorCedula/{Propietario}");
-                return response;
+                try
+                {
+                    var response = await _httpClient.GetFromJsonAsync<List<Animal>>($"api/Animal/GetAnimalesPorCedula/{Propietario}");
+                    return response ?? new List<Animal>(); // Si response es null, devuelve una lista vacía
+                }
+                catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    // Manejar el error 404 (Not Found) devolviendo una lista vacía
+                    return new List<Animal>();
+                }
             }
             else
             {
-                // Considera lanzar una excepción o devolver un código de estado HTTP apropiado aquí
-                // en lugar de devolver null.
                 throw new ArgumentException("Propietario no válido.");
             }
         }
 
 
 
-
+        public async Task<List<Animal>> Index()
+        {
+            var animales = await _httpClient.GetFromJsonAsync<List<Animal>>("api/Animal");
+            var animalesConPropietario = animales.Where(a => a.Propietario == "").ToList();
+            return animalesConPropietario;
+        }
 
 
 
