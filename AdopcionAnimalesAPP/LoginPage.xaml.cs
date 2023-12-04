@@ -10,6 +10,7 @@ public partial class LoginPage : ContentPage
 	private Cliente _cliente;
     private string _cedula;
     private readonly ClienteService _ClienteService;
+
     public LoginPage(ClienteService clienteService)
 	{
 		InitializeComponent();

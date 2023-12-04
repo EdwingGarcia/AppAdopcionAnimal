@@ -1,26 +1,55 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdopcionAnimalesAPP.LoginPage"
              Title="Adopta tu animalito"
-             BackgroundColor="MediumPurple">
+             BackgroundColor="MediumPurple"
+             NavigationPage.HasNavigationBar="False">
 
 
 
-    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label 
-     Text="Bienvenido al inventario de Productos!"
-     VerticalOptions="Center" 
-     HorizontalOptions="Center"
-     TextColor="White"
-     BackgroundColor="Purple"
-     FontAttributes="Bold" 
-     FontSize="18" />
-        <Image Source="Resources/Images/cuchau.jpg" Margin="20"  WidthRequest="200"  Aspect="Fill"></Image>
-        <Entry Placeholder="Usuario" x:Name="Cedula" HorizontalOptions="FillAndExpand" Margin="10"/>
-        <Entry Placeholder="Contraseña" x:Name="Password" IsPassword="True" HorizontalOptions="FillAndExpand" Margin="10"/>
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
 
-        <Button Text="Ingresar" Clicked="Boton_Ingresar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Purple"/>
-        <Button Text="Registrate!" Clicked="Boton_Registro" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Purple"/>
-    </VerticalStackLayout>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Margin="0,60,0,20" Source="logo.png" HeightRequest="180" WidthRequest="160"></Image>
+            <Frame Grid.Row="1" Margin="20,30" BorderColor="#1C375C" HasShadow="True"  CornerRadius="50" >
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="20" Padding="30">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"  Text="Welcome Back!" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0"></Label>
+                    <Label Grid.Row="1" Margin="0,-15,0,0" Text="Login in to account" TextColor="#1C375C"  HorizontalOptions="CenterAndExpand"></Label>
+                    <Entry Grid.Row="2" Placeholder="Usuario"  x:Name="Cedula" Margin="0,30,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></Entry>
+                    <Entry Grid.Row="3" Placeholder="Contraseña" x:Name="Password" IsPassword="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                    <Button Grid.Row="4" Text="Login" BackgroundColor="Indigo" Clicked="Boton_Ingresar" CornerRadius="20" Margin="0,10,0,0" />
+                    <StackLayout Grid.Row="10" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="5" Margin="0,-70,0,0" >
+                        <Label Text="Don't have an account?" />
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Sign up here" TextColor="Indigo" TextDecorations="Underline" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Boton_Registro" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
