@@ -4,11 +4,58 @@
              x:Class="AdopcionAnimalesAPP.AnimalesAdoptadosPage"
              Title="AnimalesAdoptadosPage">
     <VerticalStackLayout>
-        <HorizontalStackLayout HorizontalOptions="FillAndExpand" BackgroundColor="DarkBlue">     
-            <Image Source="dotnet_bot.png" HeightRequest="50" WidthRequest="50"/>
-            <Label Text="Lista Animales Adopción" FontSize="30" TextColor="White"/>
-            <Label x:Name="mensaje" FontSize="30" TextColor="White"/>
+        <HorizontalStackLayout
+BackgroundColor="Indigo"
+Padding="0,10,0,10">
+
+            <Image
+    Source="logo.png"
+    HeightRequest="50"
+    WidthRequest="100"/>
+
+            <Label 
+    Text="Lista Animales Adopción"
+    FontSize="20"
+    TextColor="White"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" 
+    FontFamily="Roboto"
+    FontAttributes="Bold" />
+
         </HorizontalStackLayout>
+
+        <Label Text="Solicitudes Pendientes" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontAttributes="Bold" FontSize="25" />
+        <Label x:Name="txtnoSolicitud" Text="No tienes solicitudes de adopción pendientes" HorizontalOptions="Center" FontSize="14" TextColor="Red" IsVisible="false" />
+        
+        <ListView x:Name="listastatus" RowHeight="80" ItemSelected="OnClickShowDetails">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="{Binding Img}" Margin="5,5,10,5" WidthRequest="50" HeightRequest="50" Aspect="AspectFill"/>
+                            <StackLayout Grid.Column="1">
+                                <Label Text="{Binding Nombre}" VerticalOptions="Start" FontAttributes="Bold" FontSize="16" />
+                                <HorizontalStackLayout>
+                                    <Label  Text="Status: " FontSize="14" />
+                                    <Label  Text="Pendiente" FontSize="14" TextColor="Orange" />
+                                </HorizontalStackLayout>
+                                
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <Label Text="Tus animalitos Adoptados" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontAttributes="Bold" FontSize="25" />
+        <Label x:Name="txtnoAnimales" Text="No tienes animales adoptados" HorizontalOptions="Center" FontSize="14" TextColor="Red" IsVisible="false" />
+
         <ListView x:Name="listaadoptados" RowHeight="80" ItemSelected="OnClickShowDetails">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -24,6 +71,11 @@
 
                             <StackLayout Grid.Column="1">
                                 <Label Text="{Binding Nombre}" VerticalOptions="Start" FontAttributes="Bold" FontSize="16" />
+                                <HorizontalStackLayout>
+                                    <Label  Text="Status: " FontSize="14" />
+                                    <Label  Text="Adoptado" FontSize="14" TextColor="ForestGreen" />
+                                </HorizontalStackLayout>
+                               
                             </StackLayout>
 
                         </Grid>
@@ -34,7 +86,6 @@
             </ListView.ItemTemplate>
 
         </ListView>
-
 
 
 

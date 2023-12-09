@@ -21,9 +21,20 @@ public partial class AnimalesAdoptadosPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        List<Animal> ListaAnimales = await _AnimalService.BuscarPorPropietario(_cedula);
-            ObservableCollection<Animal> animales = new ObservableCollection<Animal>(ListaAnimales);
-            listaadoptados.ItemsSource = animales;
+        List<Animal> listaProp = await _AnimalService.BuscarPorPropietario(_cedula);
+        List<Animal> listaFiltrada = listaProp.Where(animal => animal.Status == 1).ToList();
+        ObservableCollection<Animal> animalesP = new ObservableCollection<Animal>(listaFiltrada);
+        if (animalesP.Count == 0) { txtnoSolicitud.IsVisible = true; }
+        listastatus.ItemsSource=animalesP;
+        
+
+
+       
+        List<Animal> listaFiltrada2 = listaProp.Where(animal => animal.Status == 2).ToList();
+        ObservableCollection<Animal> s = new ObservableCollection<Animal>(listaFiltrada2);
+        if (s.Count == 0) { txtnoAnimales.IsVisible = true; }
+        listaadoptados.ItemsSource = s;
+        
     }
     private async void OnClickShowDetails(object sender, SelectedItemChangedEventArgs e)
     {

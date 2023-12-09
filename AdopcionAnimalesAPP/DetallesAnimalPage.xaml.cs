@@ -28,10 +28,15 @@ public partial class DetallesAnimalPage : ContentPage
         altura.Text = _animal.Altura.ToString();
         peso.Text = _animal.Peso.ToString();
         enfermedad.Text = _animal.Enfermedad;
+        if(_animal.Status==1 || _animal.Status == 2)
+        {
+            btnSoli.IsVisible = false;
+        }
     }
 
     private async void OnClickAdoptar(object sender, EventArgs e)
     {
+        _animal.Status = 1;
         _animal.Propietario = _cedulaCliente;
         Img.Source = _animal.Img;
         Nombre.Text = _animal.Nombre;
@@ -40,6 +45,7 @@ public partial class DetallesAnimalPage : ContentPage
         altura.Text = _animal.Altura.ToString();
         peso.Text = _animal.Peso.ToString();
         enfermedad.Text = _animal.Enfermedad;
+        
         await _animalService.UpdateAnimal(_animal.Id, _animal);
         await Navigation.PopAsync();
     }

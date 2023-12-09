@@ -20,6 +20,7 @@ namespace AdopcionAnimalesAPP.Models
         public string Propietario { get; set; }//Cedula Propietario
         public string Img {  get; set; }
 
+       
 
     }
 }

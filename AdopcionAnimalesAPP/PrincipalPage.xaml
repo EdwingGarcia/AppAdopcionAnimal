@@ -5,24 +5,32 @@
              Title="Lista Animales para adoptar">
     <VerticalStackLayout>
         <HorizontalStackLayout
-     HorizontalOptions="FillAndExpand"
-     BackgroundColor="DarkBlue">
-            <Image Source="dotnet_bot.png"
-            HeightRequest="50"
-            WidthRequest="50"
-            />
-            <Label Text="Lista Animales Adopción"
-            FontSize="30"
-            TextColor="White"/>
+    BackgroundColor="Indigo"
+    Padding="0,10,0,10">
+
+            <Image
+        Source="logo.png"
+        HeightRequest="50"
+        WidthRequest="100"/>
+
+            <Label 
+        Text="Lista Animales Adopción"
+        FontSize="20"
+        TextColor="White"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontFamily="Roboto"
+        FontAttributes="Bold" />
+
         </HorizontalStackLayout>
 
         <Button Text="Mostrar Animales ADOPTADOS"
         Clicked="MostrarAdoptados"
      FontSize="20"
-     Margin="5"
+     Margin="20,10,20,0"
      HorizontalOptions="FillAndExpand"
      TextColor="Black"
-     BackgroundColor="SkyBlue"/>
+     BackgroundColor="MediumPurple"/>
 
 
         <ListView x:Name="listaAnimales"

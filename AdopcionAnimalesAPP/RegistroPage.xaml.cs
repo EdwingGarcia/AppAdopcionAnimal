@@ -40,4 +40,9 @@ public partial class RegistroPage : ContentPage
         await _ClienteService.PostCliente(cliente);
         await Navigation.PopAsync();
     }
+
+    private void Boton_Login(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new LoginPage(_ClienteService));
+    }
 }
