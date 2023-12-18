@@ -13,12 +13,7 @@ C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\ne
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\mauiimage.inputs
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\mauifont.inputs
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\mauisplash.inputs
-C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\splash.png
-C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\splash.png
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
-C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\splash.png
-C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\splash.png
-C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\splash.png
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\mauisplash.stamp
@@ -1046,3 +1041,14 @@ C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\ne
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\AdopcionAnimalesAPP.sourcelink.json
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\r\drawable\logo.png
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\logo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\logo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\logo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\logo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\logo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\splash.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\splash.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\splash.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\splash.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\splash.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-android\resizetizer\r\drawable\gatitologo.png

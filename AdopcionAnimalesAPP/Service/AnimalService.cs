@@ -68,7 +68,6 @@ namespace AdopcionAnimalesAPP.Service
                 }
                 catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    // Manejar el error 404 (Not Found) devolviendo una lista vacía
                     return new List<Animal>();
                 }
             }

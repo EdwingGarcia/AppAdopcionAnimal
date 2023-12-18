@@ -7,8 +7,8 @@ namespace AdopcionAnimalesAPP
         public App()
         {
             InitializeComponent();
-            ClienteService clienteservice = new ClienteService();
-            MainPage = new NavigationPage(new LoginPage(clienteservice));
+            
+            MainPage = new NavigationPage(new PrincipalPage());
         }
     }
 }

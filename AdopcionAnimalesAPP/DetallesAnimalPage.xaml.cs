@@ -9,9 +9,10 @@ public partial class DetallesAnimalPage : ContentPage
     private string _cedulaCliente;
 	private readonly AnimalService _animalService;
 
-	public DetallesAnimalPage(AnimalService animalservice,string cedulaCliente)
+	public DetallesAnimalPage(string cedulaCliente)
 	{
-		InitializeComponent();
+        AnimalService animalservice = new AnimalService();
+        InitializeComponent();
 		_animalService = animalservice;
         _cedulaCliente = cedulaCliente;
         
@@ -21,6 +22,10 @@ public partial class DetallesAnimalPage : ContentPage
     {
         base.OnAppearing();
         _animal = BindingContext as Animal;
+        if (_animal.Status == 1 || _animal.Status == 2)
+        {
+            btnSoli.IsVisible = false;
+        }
         Img.Source = _animal.Img;
         Nombre.Text = _animal.Nombre;
         nombreCientifico.Text = _animal.NombreCientifico;
@@ -28,10 +33,7 @@ public partial class DetallesAnimalPage : ContentPage
         altura.Text = _animal.Altura.ToString();
         peso.Text = _animal.Peso.ToString();
         enfermedad.Text = _animal.Enfermedad;
-        if(_animal.Status==1 || _animal.Status == 2)
-        {
-            btnSoli.IsVisible = false;
-        }
+       
     }
 
     private async void OnClickAdoptar(object sender, EventArgs e)
@@ -47,6 +49,10 @@ public partial class DetallesAnimalPage : ContentPage
         enfermedad.Text = _animal.Enfermedad;
         
         await _animalService.UpdateAnimal(_animal.Id, _animal);
+        await Navigation.PopAsync();
+    }
+    private async void ClickImg(object sender, EventArgs e)
+    {
         await Navigation.PopAsync();
     }
 }

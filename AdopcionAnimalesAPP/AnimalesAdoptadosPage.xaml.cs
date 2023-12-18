@@ -10,9 +10,10 @@ public partial class AnimalesAdoptadosPage : ContentPage
     private Animal _animal;
     private string _cedula;
     private readonly AnimalService _AnimalService;
-    public AnimalesAdoptadosPage(AnimalService animalservice, string cedulaCliente)
+    public AnimalesAdoptadosPage(string cedulaCliente)
 	{
 		InitializeComponent();
+        AnimalService animalservice = new AnimalService();
         _AnimalService = animalservice;
         _animal = new Animal();
         _cedula = cedulaCliente;
@@ -24,7 +25,8 @@ public partial class AnimalesAdoptadosPage : ContentPage
         List<Animal> listaProp = await _AnimalService.BuscarPorPropietario(_cedula);
         List<Animal> listaFiltrada = listaProp.Where(animal => animal.Status == 1).ToList();
         ObservableCollection<Animal> animalesP = new ObservableCollection<Animal>(listaFiltrada);
-        if (animalesP.Count == 0) { txtnoSolicitud.IsVisible = true; }
+
+        if (animalesP.Count != 0) { txtSolicitud.IsVisible = true; }
         listastatus.ItemsSource=animalesP;
         
 
@@ -42,9 +44,14 @@ public partial class AnimalesAdoptadosPage : ContentPage
 
         await toast.Show();
         Animal? animal = e.SelectedItem as Animal;
-        await Navigation.PushAsync(new DetallesAnimalPage(_AnimalService, _cedula)
+        await Navigation.PushAsync(new DetallesAnimalPage( _cedula)
         {
             BindingContext = animal,
         });
+    }
+
+    private async void ClickImg(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
     }
 }

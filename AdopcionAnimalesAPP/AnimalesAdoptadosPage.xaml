@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdopcionAnimalesAPP.AnimalesAdoptadosPage"
-             Title="AnimalesAdoptadosPage">
+    NavigationPage.HasNavigationBar="False"
+             >
+    <ScrollView>
     <VerticalStackLayout>
         <HorizontalStackLayout
 BackgroundColor="Indigo"
@@ -11,10 +13,14 @@ Padding="0,10,0,10">
             <Image
     Source="logo.png"
     HeightRequest="50"
-    WidthRequest="100"/>
+    WidthRequest="100">
+    <Image.GestureRecognizers>
+        <TapGestureRecognizer Tapped="ClickImg" />
+    </Image.GestureRecognizers>
+ </Image>
 
             <Label 
-    Text="Lista Animales Adopción"
+    Text="Adopciones"
     FontSize="20"
     TextColor="White"
     VerticalOptions="Center" 
@@ -24,8 +30,9 @@ Padding="0,10,0,10">
 
         </HorizontalStackLayout>
 
-        <Label Text="Solicitudes Pendientes" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontAttributes="Bold" FontSize="25" />
-        <Label x:Name="txtnoSolicitud" Text="No tienes solicitudes de adopción pendientes" HorizontalOptions="Center" FontSize="14" TextColor="Red" IsVisible="false" />
+        <Label  x:Name="txtSolicitud" IsVisible="false" Text="Solicitudes Pendientes" Margin="0,20,0,10" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontAttributes="Bold" FontSize="25" />
+            
+
         
         <ListView x:Name="listastatus" RowHeight="80" ItemSelected="OnClickShowDetails">
             <ListView.ItemTemplate>
@@ -52,8 +59,8 @@ Padding="0,10,0,10">
             </ListView.ItemTemplate>
         </ListView>
 
-
-        <Label Text="Tus animalitos Adoptados" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontAttributes="Bold" FontSize="25" />
+        <BoxView Color="LightGrey" HeightRequest="1.5" HorizontalOptions="FillAndExpand" Margin="20,10,20,0"></BoxView>
+        <Label Text="Tus animalitos Adoptados" Margin="0,20,0,10" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontAttributes="Bold" FontSize="25" />
         <Label x:Name="txtnoAnimales" Text="No tienes animales adoptados" HorizontalOptions="Center" FontSize="14" TextColor="Red" IsVisible="false" />
 
         <ListView x:Name="listaadoptados" RowHeight="80" ItemSelected="OnClickShowDetails">
@@ -94,4 +101,5 @@ Padding="0,10,0,10">
 
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

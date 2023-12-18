@@ -13,7 +13,7 @@
                 <RowDefinition Height="*"></RowDefinition>
 
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" Margin="0,40,0,0" Source="logo.png" HeightRequest="180" WidthRequest="150"></Image>
+            <Image Grid.Row="0" Margin="0,40,0,0" Source="gatitologo.png" HeightRequest="180" WidthRequest="150"></Image>
             <Frame Grid.Row="1" Margin="20,30" BorderColor="#1C375C" HasShadow="True"  CornerRadius="50" >
                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="20" Padding="30">
                     <Grid.RowDefinitions>
@@ -33,7 +33,7 @@
                         <RowDefinition Height="Auto"></RowDefinition>
 
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0"  Text="Bienvenido!" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0"></Label>
+                    <Label Grid.Row="0"  Text="¡Bienvenido!" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0"></Label>
                     <Label Grid.Row="1" Margin="0,-15,0,0" Text="Gracias por escogernos" TextColor="#1C375C"  HorizontalOptions="CenterAndExpand"></Label>
                     <Entry Grid.Row="2" Placeholder="Cedula"  x:Name="Cedula" Margin="0,10,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></Entry>
                     <Entry Grid.Row="3" Placeholder="Nombre" x:Name="Nombre" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
@@ -41,11 +41,11 @@
                     <Entry Grid.Row="5" Placeholder="Contraseña" x:Name="Password" IsPassword="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
                     <Button Grid.Row="6" Text="Crear Cuenta" Clicked="Button_Clicked"  BackgroundColor="Indigo" CornerRadius="20" Margin="0,10,0,0" />
                     <StackLayout Grid.Row="10" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="5" Margin="0,-70,0,0" >
-                        <Label Text="Already have an account?" />
+                        <Label Text="¿Ya tienes una cuenta?" />
                         <Label>
                             <Label.FormattedText>
                                 <FormattedString>
-                                    <Span Text="Login" TextColor="Indigo" TextDecorations="Underline" />
+                                    <Span Text="Ingresar" TextColor="Indigo" TextDecorations="Underline" />
                                 </FormattedString>
                             </Label.FormattedText>
                             <Label.GestureRecognizers>
@@ -57,23 +57,5 @@
             </Frame>
         </Grid>
     </ContentPage.Content>
-    <!--<VerticalStackLayout>
-        <Label 
-            Text="Ingresa tu información:"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            TextColor="White"
-            BackgroundColor="Purple"
-            FontAttributes="Bold" 
-            FontSize="18" />
-       
-        <Entry Placeholder="Cedula" x:Name="Cedula" HorizontalOptions="FillAndExpand" Margin="10"/>
-        <Entry Placeholder="Nombre" x:Name="Nombre" HorizontalOptions="FillAndExpand" Margin="10"/>
-        <Entry Placeholder="Direccion" x:Name="Direccion" HorizontalOptions="FillAndExpand" Margin="10"/>
-        <Entry Placeholder="Contraseña" x:Name="Password"  HorizontalOptions="FillAndExpand" Margin="10"/>
-        <Entry Placeholder="Repita Contraseña" x:Name="PasswordConf"  HorizontalOptions="FillAndExpand" Margin="10"/>
-        
-
-        <Button Text="Crear Cuenta" Clicked="Button_Clicked" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Purple"/>
-    </VerticalStackLayout>-->
+  
 </ContentPage> 

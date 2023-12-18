@@ -75,3 +75,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/nicko/source/repos/AdopcionAnimalesAPP/AdopcionAnimalesAPP/VeterinariasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AdopcionAnimalesAPP.VeterinariasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = VeterinariasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = VeterinariasPage.xaml

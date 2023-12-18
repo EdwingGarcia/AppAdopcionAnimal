@@ -11,10 +11,11 @@ public partial class LoginPage : ContentPage
     private string _cedula;
     private readonly ClienteService _ClienteService;
 
-    public LoginPage(ClienteService clienteService)
+    public LoginPage()
 	{
+
 		InitializeComponent();
-		_ClienteService = clienteService;
+		_ClienteService = new ClienteService();
         _cliente = new Cliente();
     }
     protected override void OnAppearing()
@@ -37,11 +38,15 @@ public partial class LoginPage : ContentPage
             _cliente.Password = Password.Text;
 
             Cliente usuario = await _ClienteService.GetCliente(_cliente.Cedula);
+
             if (usuario != null && usuario.Password == _cliente.Password)
             {
-                _cedula = _cliente.Cedula;
-                AnimalService animalservice= new AnimalService();
-                await Navigation.PushAsync(new PrincipalPage(animalservice,_cedula));
+       
+
+                Preferences.Set("Cedula",_cliente.Cedula);
+                Preferences.Set("Password", _cliente.Password);
+                Preferences.Set("Nombre", usuario.Nombre);
+                await Navigation.PopAsync();
             }
         }
     }

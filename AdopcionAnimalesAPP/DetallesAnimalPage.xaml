@@ -39,14 +39,14 @@
                
             </VerticalStackLayout>
         </HorizontalStackLayout>
-
         <Button x:Name="btnSoli" Text="Solicitar Adopción"
-        Clicked="OnClickAdoptar"
-         FontSize="20"
-         Margin="20,10,20,0"
-         HorizontalOptions="FillAndExpand"
-         TextColor="Black"
-         BackgroundColor="MediumPurple"/>
+         Clicked="OnClickAdoptar"
+          FontSize="20"
+          Margin="20,10,20,0"
+          HorizontalOptions="FillAndExpand"
+          TextColor="Black"
+          BackgroundColor="MediumPurple"/>  
+
 
 
     </VerticalStackLayout>

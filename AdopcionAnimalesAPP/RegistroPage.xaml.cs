@@ -43,6 +43,6 @@ public partial class RegistroPage : ContentPage
 
     private void Boton_Login(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new LoginPage(_ClienteService));
+        Navigation.PushAsync(new LoginPage());
     }
 }

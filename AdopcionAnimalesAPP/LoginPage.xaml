@@ -14,7 +14,7 @@
                 <RowDefinition Height="*"></RowDefinition>
 
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" Margin="0,60,0,20" Source="logo.png" HeightRequest="180" WidthRequest="160"></Image>
+            <Image Grid.Row="0" Margin="0,60,0,20" Source="gatitologo.png" HeightRequest="180" WidthRequest="160"></Image>
             <Frame Grid.Row="1" Margin="20,30" BorderColor="#1C375C" HasShadow="True"  CornerRadius="50" >
                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="20" Padding="30">
                     <Grid.RowDefinitions>
@@ -30,17 +30,17 @@
                         <RowDefinition Height="Auto"></RowDefinition>
 
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0"  Text="Welcome Back!" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0"></Label>
-                    <Label Grid.Row="1" Margin="0,-15,0,0" Text="Login in to account" TextColor="#1C375C"  HorizontalOptions="CenterAndExpand"></Label>
-                    <Entry Grid.Row="2" Placeholder="Usuario"  x:Name="Cedula" Margin="0,30,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></Entry>
+                    <Label Grid.Row="0"  Text="¡Hola de nuevo!" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0"></Label>
+                    <Label Grid.Row="1" Margin="0,-15,0,0" Text="Ingresa a tu cuenta" TextColor="#1C375C"  HorizontalOptions="CenterAndExpand"></Label>
+                    <Entry Grid.Row="2" Placeholder="Cedula"  x:Name="Cedula" Margin="0,30,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></Entry>
                     <Entry Grid.Row="3" Placeholder="Contraseña" x:Name="Password" IsPassword="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
-                    <Button Grid.Row="4" Text="Login" BackgroundColor="Indigo" Clicked="Boton_Ingresar" CornerRadius="20" Margin="0,10,0,0" />
+                    <Button Grid.Row="4" Text="Ingresar" BackgroundColor="Indigo" Clicked="Boton_Ingresar" CornerRadius="20" Margin="0,10,0,0" />
                     <StackLayout Grid.Row="10" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="5" Margin="0,-70,0,0" >
-                        <Label Text="Don't have an account?" />
+                        <Label Text="¿No tienes una cuenta?" />
                         <Label>
                             <Label.FormattedText>
                                 <FormattedString>
-                                    <Span Text="Sign up here" TextColor="Indigo" TextDecorations="Underline" />
+                                    <Span Text="Crea tu cuenta" TextColor="Indigo" TextDecorations="Underline" />
                                 </FormattedString>
                             </Label.FormattedText>
                             <Label.GestureRecognizers>
