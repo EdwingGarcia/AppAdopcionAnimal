@@ -303,3 +303,6 @@ C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\ne
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\AdopcionAnimalesAPP.pdb
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\AdopcionAnimalesAPP.genruntimeconfig.cache
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\AdopcionAnimalesAPP.dll
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\gatitologo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Toolkit.Mvvm.dll

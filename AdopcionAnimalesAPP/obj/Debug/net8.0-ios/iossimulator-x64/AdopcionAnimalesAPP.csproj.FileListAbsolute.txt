@@ -304,7 +304,6 @@ C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\ne
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\logo_0CCB8BBED8FD8365F72162500AD221406C9784D79D7A9F270A688049FCAD1137.png
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\logo_0CCB8BBED8FD8365F72162500AD221406C9784D79D7A9F270A688049FCAD1137@2x.png
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\logo_0CCB8BBED8FD8365F72162500AD221406C9784D79D7A9F270A688049FCAD1137@3x.png
@@ -316,3 +315,9 @@ C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\ne
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\AdopcionAnimalesAPP.pdb
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\AdopcionAnimalesAPP.genruntimeconfig.cache
 C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\ref\AdopcionAnimalesAPP.dll
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\logo_4242F6DD1FE7FB12DBDB2BB3EBF4051856FE9E1FB0140AF3BAA39C18034EAF1D.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\logo_4242F6DD1FE7FB12DBDB2BB3EBF4051856FE9E1FB0140AF3BAA39C18034EAF1D@2x.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\logo_4242F6DD1FE7FB12DBDB2BB3EBF4051856FE9E1FB0140AF3BAA39C18034EAF1D@3x.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\gatitologo.png
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-ios\iossimulator-x64\CommunityToolkit.Mvvm.dll
+C:\Users\nicko\source\repos\AdopcionAnimalesAPP\AdopcionAnimalesAPP\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Toolkit.Mvvm.dll

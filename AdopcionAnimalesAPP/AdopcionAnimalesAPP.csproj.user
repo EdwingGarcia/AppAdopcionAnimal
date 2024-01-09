@@ -4,26 +4,26 @@
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
     <ActiveDebugProfile>Phone L-DPI 2.7in - API 33 (Android 13.0 - API 33)</ActiveDebugProfile>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <DefaultDevice>phone_l-dpi_2_7in_-_api_33</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="AnimalesAdoptadosPage.xaml">
+    <MauiXaml Update="Views\AnimalesAdoptadosPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="DetallesAnimalPage.xaml">
+    <MauiXaml Update="Views\DetallesAnimalPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="LoginPage.xaml">
+    <MauiXaml Update="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="PrincipalPage.xaml">
+    <MauiXaml Update="Views\PrincipalPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RegistroPage.xaml">
+    <MauiXaml Update="Views\RegistroPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="VeterinariasPage.xaml">
+    <MauiXaml Update="Views\VeterinariasPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdopcionAnimalesAPP.PrincipalPage"
+             Title="Lista Animales para adoptar"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout
+    BackgroundColor="Indigo"
+    Padding="0,10,0,10">
+
+                <Image
+        Source="logo.png"
+        HeightRequest="50"
+        WidthRequest="100" BackgroundColor="Indigo"/>
+
+                <Label 
+        Text="Patitas de Amor    "
+        FontSize="20"
+        TextColor="White"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontFamily="Roboto"
+        FontAttributes="Bold" />
+
+
+                <Button x:Name="btnLog"
+            Text="Ingresar"
+         Clicked="logs"
+        FontSize="15"
+        Margin="40,10,10,10"
+        HorizontalOptions="FillAndExpand"
+        TextColor="Black"
+        BackgroundColor="MediumPurple"/>
+
+            </HorizontalStackLayout>
+            <StackLayout>
+                <Label  Text="Nuestros Animales" TextColor="Black" Margin="10,10,0,10" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <HorizontalStackLayout>
+                    <Label x:Name="labelB" Text="Bienvenido" TextColor="Black" Margin="20,10,0,5" FontSize="15" IsVisible="false"/>
+                    <Label x:Name="nombreBienvenida" Text="  " TextColor="Black" Margin="10,10,0,5" FontSize="15" FontAttributes="Bold,Italic" WidthRequest="200" />
+                </HorizontalStackLayout>
+                <Label Text="Aquí podrás ver la lista de animales que puedes adoptar" TextColor="Black" Margin="20,5,10,0" FontSize="15"/>
+            </StackLayout>
+
+            <HorizontalStackLayout >
+                <Button x:Name="btnAAdoptados"
+            IsVisible="false"
+            Text="Tus Animales Adoptados"
+            Clicked="MostrarAdoptados"
+            FontSize="15"
+            HorizontalOptions="FillAndExpand"
+            TextColor="Black"
+            Margin="20,20,5,10"
+            BackgroundColor="MediumPurple"/>
+
+                <Button 
+                x:Name="btnVet"
+                 IsVisible="false"
+                Text="         Veterinarias         "
+            Clicked="MostrarVeterinario"
+            FontSize="15"
+            HorizontalOptions="FillAndExpand"
+            TextColor="Black"
+            Margin="10,20,20,10"
+               
+            BackgroundColor="MediumPurple"
+            />
+
+            </HorizontalStackLayout>
+
+            <StackLayout Margin="10,10,10,10">
+                <ListView x:Name="listaAnimales"
+              RowHeight="80"
+              ItemSelected="OnClickShowDetails">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{Binding Img}" Margin="5,5,10,5" WidthRequest="60" HeightRequest="60" Aspect="AspectFill"/>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="{Binding Nombre}" VerticalOptions="Start" FontAttributes="Bold" FontSize="16" Margin="5,16,10,5" />
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
