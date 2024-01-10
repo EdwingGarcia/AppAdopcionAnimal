@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdopcionAnimalesAPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f2999551389e752ef78a8e33f0a09d52ee1e2278")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdopcionAnimalesAPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdopcionAnimalesAPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

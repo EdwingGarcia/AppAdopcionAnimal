@@ -19,7 +19,7 @@ public partial class AnimalesAdoptadosPage : ContentPage
     private async void OnClickShowDetails(object sender, SelectedItemChangedEventArgs e)
     {
         Animal? animal = e.SelectedItem as Animal;
-        await Navigation.PushAsync(new DetallesAnimalPage( )
+        await Navigation.PushAsync(new DetallesAnimalPage()
         {
             BindingContext = animal,
         });

@@ -27,8 +27,8 @@
 
 
                 <Button x:Name="btnLog"
-            Text="Ingresar"
-         Clicked="logs"
+            Text="{Binding btnLog}"
+         Command="{Binding LogsCommand}"
         FontSize="15"
         Margin="40,10,10,10"
         HorizontalOptions="FillAndExpand"
@@ -39,17 +39,17 @@
             <StackLayout>
                 <Label  Text="Nuestros Animales" TextColor="Black" Margin="10,10,0,10" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <HorizontalStackLayout>
-                    <Label x:Name="labelB" Text="Bienvenido" TextColor="Black" Margin="20,10,0,5" FontSize="15" IsVisible="false"/>
-                    <Label x:Name="nombreBienvenida" Text="  " TextColor="Black" Margin="10,10,0,5" FontSize="15" FontAttributes="Bold,Italic" WidthRequest="200" />
+                    <Label x:Name="labelB" Text="Bienvenido" TextColor="Black" Margin="20,10,0,5" FontSize="15" IsVisible="{Binding LabelB}"/>
+                    <Label x:Name="nombreBienvenida" Text="{Binding Nombre}" TextColor="Black" Margin="10,10,0,5" FontSize="15" FontAttributes="Bold,Italic" WidthRequest="200" />
                 </HorizontalStackLayout>
                 <Label Text="Aquí podrás ver la lista de animales que puedes adoptar" TextColor="Black" Margin="20,5,10,0" FontSize="15"/>
             </StackLayout>
 
             <HorizontalStackLayout >
                 <Button x:Name="btnAAdoptados"
-            IsVisible="false"
+            IsVisible="{Binding btnAAdoptados}"
             Text="Tus Animales Adoptados"
-            Clicked="MostrarAdoptados"
+            Command="{Binding OpenAdoptados}"
             FontSize="15"
             HorizontalOptions="FillAndExpand"
             TextColor="Black"
@@ -58,9 +58,9 @@
 
                 <Button 
                 x:Name="btnVet"
-                 IsVisible="false"
+                 IsVisible="{Binding btnVet}"
                 Text="         Veterinarias         "
-            Clicked="MostrarVeterinario"
+            Command="{Binding OpenVeterinarias}"
             FontSize="15"
             HorizontalOptions="FillAndExpand"
             TextColor="Black"
@@ -74,6 +74,7 @@
             <StackLayout Margin="10,10,10,10">
                 <ListView x:Name="listaAnimales"
               RowHeight="80"
+             ItemsSource="{Binding animals}"
               ItemSelected="OnClickShowDetails">
                     <ListView.ItemTemplate>
                         <DataTemplate>
