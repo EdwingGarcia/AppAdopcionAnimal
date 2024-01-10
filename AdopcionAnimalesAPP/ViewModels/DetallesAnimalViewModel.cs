@@ -25,19 +25,22 @@ namespace AdopcionAnimalesAPP.ViewModels
         public string EnfermedadText { get; set; }
         public ICommand Adoptar => new Command(async () => await OnClickAdoptar());
 
-        public DetallesAnimalViewModel()
+        public DetallesAnimalViewModel(Animal animal)
         {
             _cedulaCliente = Preferences.Get("Cedula", "0");
             _apiService = new ApiService();
-            _animal = new Animal(); 
+            _animal = animal;
 
-            buscarAnimal();
+          //  buscarAnimal();
 
             if (_animal.Status == 1 || _animal.Status == 2)
             {
                 VisibleBtnSoli = false;
             }
-
+            else
+            {
+                VisibleBtnSoli = true;
+            }
             ImgSource = _animal.Img;
             NombreText = _animal.Nombre;
             NombreCientificoText = _animal.NombreCientifico;

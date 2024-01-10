@@ -26,7 +26,6 @@ namespace AdopcionAnimalesAPP.ViewModels
         public ObservableCollection<Animal> animals { get; set; }
         public ICommand OpenAdoptados => new Command(async () => await MostrarAdoptados());
         public ICommand LogsCommand => new Command(async () => await Logs());
-        public ICommand OpenDetalles => new Command(async () => await App.Current.MainPage.Navigation.PushAsync(new DetallesAnimalPage()));
         public ICommand OpenVeterinarias => new Command(async () => await App.Current.MainPage.Navigation.PushAsync(new VeterinariasPage()));
 
         public PrincipalViewModel() {
@@ -94,7 +93,7 @@ namespace AdopcionAnimalesAPP.ViewModels
                 
             }
 
-        }
+        }  
 
 
 

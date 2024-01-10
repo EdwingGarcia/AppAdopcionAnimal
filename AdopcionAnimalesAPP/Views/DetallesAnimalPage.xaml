@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdopcionAnimalesAPP.DetallesAnimalPage"
-             Title="DetallesAnimalPage">
+             Title="Detalles del Animal" NavigationPage.IconColor="Indigo" 
+             >
     <VerticalStackLayout>
 
-        <Image x:Name="Img" Grid.Column="0"  Margin="5,5,10,5" WidthRequest="150" HeightRequest="150" />
+        <Image x:Name="Img" Grid.Column="0"  Margin="5,5,10,5" WidthRequest="150" HeightRequest="150" Source="{Binding ImgSource}" />
         <Label 
             x:Name="Nombre"
-            Text="Nombre"
+            Text="{Binding NombreText}"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Margin="30"
@@ -18,34 +19,34 @@
             <VerticalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Nombre Cientifico:" Margin="20" FontAttributes="Bold"/>
-                    <Label Text="Nombre Cientifico" Margin="20" x:Name="nombreCientifico"/>
+                    <Label Text="{Binding NombreCientificoText}" Margin="20" x:Name="nombreCientifico"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Pais de Origen" Margin="20" FontAttributes="Bold"/>
-                    <Label Text="Pais de Origen" Margin="20" x:Name="paisOrigen"/>
+                    <Label Text="{Binding PaisOrigenText}" Margin="20" x:Name="paisOrigen"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Altura:" Margin="20" FontAttributes="Bold"/>
-                    <Label Text="Altura" Margin="20" x:Name="altura"/>
+                    <Label Text="{Binding AlturaText}" Margin="20" x:Name="altura"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Peso:" Margin="20" FontAttributes="Bold"/>
-                    <Label Text="Peso" Margin="20" x:Name="peso"/>
+                    <Label Text="{Binding PesoText}" Margin="20" x:Name="peso"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Enfermedad:" Margin="20" FontAttributes="Bold"/>
-                    <Label Text="Enfermedad" Margin="20" x:Name="enfermedad"/>
+                    <Label Text="{Binding EnfermedadText}" Margin="20" x:Name="enfermedad"/>
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>
         </HorizontalStackLayout>
         <Button x:Name="btnSoli" Text="Solicitar Adopción"
-         Clicked="OnClickAdoptar"
+         Command="{Binding Adoptar}"
           FontSize="20"
           Margin="20,10,20,0"
           HorizontalOptions="FillAndExpand"
           TextColor="Black"
-          BackgroundColor="MediumPurple"/>
+          BackgroundColor="MediumPurple" IsVisible="{Binding VisibleBtnSoli}"/>
 
 
 

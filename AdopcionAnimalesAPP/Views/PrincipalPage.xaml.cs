@@ -19,14 +19,8 @@ public partial class PrincipalPage : ContentPage
 
     private async void OnClickShowDetails(object sender, SelectedItemChangedEventArgs e)
     {
-       
         Animal? animal = e.SelectedItem as Animal;
-      //  Preferences.Set("identificador", animal.Id);
-            await Navigation.PushAsync(new DetallesAnimalPage()
-            {
-                BindingContext = animal,
-            });
-
+        await Navigation.PushAsync(new DetallesAnimalPage(animal));
     }
 
 
